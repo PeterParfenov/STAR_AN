@@ -16,9 +16,11 @@
 \usepackage[myheadings]{fullpage}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{wrapfig, subcaption, setspace, booktabs}
+\usepackage[final]{graphicx}
 \usepackage[T1]{fontenc}
 \usepackage[font=small, labelfont=bf]{caption}
+\usepackage{subcaption}
 \usepackage{fourier}
 \usepackage[protrusion=true, expansion=true]{microtype}
 \usepackage[english]{babel}
@@ -119,16 +121,19 @@
 \section{Results \& Discussions}
 \input{Results.tex}
 
+\FloatBarrier
+\section{Appendix}
+\input{Appendix.tex}
+
 %-------------------------------------------------------------------------------
 % REFERENCES
 %-------------------------------------------------------------------------------
 \newpage
-\section*{References}
+%\section*{References}
 
-%[2]John W. Eaton, David Bateman, Sren Hauberg, Rik Wehbring (2015). GNU
-%Octave version 4.0.0 manual: a high-level interactive language for numer-
-%ical computations. Available: http://www.gnu.org/software/octave/doc/
-%interpreter/. 
+\bibliographystyle{ieeetr}
+\bibliography{References}
+
 }
 \end{document}
 
