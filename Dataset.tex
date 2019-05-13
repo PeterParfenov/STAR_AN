@@ -15,7 +15,7 @@ The event selection cuts are displayed in the \cref{tab:EventCuts}.
         \AuAu\ 200 GeV & $|V_z|<30$ cm & $|V_r|<2$ cm & $|V_z - Vpd_z|<3$ cm \\
          \hline
     \end{tabular}
-    \caption{Event cuts}
+    \caption{Event selection cuts.}
     \label{tab:EventCuts}
 \end{table}
 
@@ -51,6 +51,31 @@ The event selection cuts are displayed in the \cref{tab:EventCuts}.
 
 \FloatBarrier
 \subsection {Track selection}
+
+Only primary tracks were used in the analysis. Cuts for number of fit points $N_{hits}$ and its ratio to the number of total possible hit points $N_{hits}^{Poss}$ were implemented to ensure accurate reconstructed track momentum and to minimize the effect of track-splitting. The additional distance of closest approach (\DCA) cut was used to suppress the tracks from secondary vertices. All cuts for track selection are shown in the \cref{tab:TrackCuts}.
+
+\begin{table}[th]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Track parameter & Cut \\
+        \hline
+        Transverse momentum & $p_{T}>0.15$ GeV/c \\
+        \hline
+        Distance of closest approach & $|$\DCA$|<3$ cm \\
+        \hline
+        Number of fit points & $N_{hits}>15$ \\
+        \hline
+        No. of fit points to No. of possible points ratio & $N_{hits}/N_{hits}^{Poss} \geqslant 0.51$ \\
+        \hline
+        Pseudorapidity & $|\eta|<1$ \\
+        \hline
+        Total momentum & $p<10$ GeV/c \\
+        \hline
+    \end{tabular}
+    \caption{Track selection cuts.}
+    \label{tab:TrackCuts}
+\end{table}
 
 \begin{figure}[ht]
     \begin{subfigure}{.49\textwidth}
